@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="article.css" />
+    <script src="https://kit.fontawesome.com/972f63b1c4.js" crossorigin="anonymous"></script>
+    <title>AJOUT D'UN ARTICLE</title>
+</head>
+
+<body>
+    <header>
+        <h1>AJOUT D'UN ARTICLE</h1>
+        <button onclick="location.href='index.html'">Home</button>
+    </header>
+    <main>
+        <section>
+            <form>
+                <div class="box">
+                    <label for="">Nom</label>
+                    <input type="text" id="nom" />
+                    <output id="nom-out"></output>
+                </div>
+                <div class="box">
+                    <label for="marque">Marque</label>
+                    <select name="marque" id="marque">
+                        <option value="- Choisissez votre Marque -">
+                            - Choisissez votre Marque -
+                        </option>
+                        <option value="Slow Cosmétique">Slow Cosmétique</option>
+                        <option value="Clarins">Clarins</option>
+                        <option value="Lovéa">Lovéa</option>
+                        <option value="Yves Rocher">Yves Rocher</option>
+                        <option value="Léa Nature">Léa Nature</option>
+                        <option value="Aroma Zone">Aroma Zone</option>
+                        <option value="Body Nature">Body Nature</option>
+                    </select>
+                    <output id="marqueout"></output>
+                </div>
+                <div class="box">
+                    <label for="">Prix</label>
+                    <input type="text" id="prix" />
+                    <output id="prix-out"></output>
+                </div>
+                <div class="box">
+                    <label for="">Sa date de production</label>
+                    <input type="date" id="production" />
+                    <output id="productionout"></output>
+                </div>
+                <div class="box">
+                    <label>Type</label>
+                    <select name="" id="type">
+                        <option value="- Choisissez votre Type -">
+                            - Choisissez votre Type -
+                        </option>
+                        <option value="Hygiène et toilette">Hygiène et toilette</option>
+                        <option value="Soins esthétiques">Soins esthétiques</option>
+                        <option value="Produits solaires">Produits solaires</option>
+                        <option value="Beauté des mains et des pieds">Beauté des mains et des pieds</option>
+                        <option value="Produits de maquillage">Produits de maquillage</option>
+                        <option value="Entretien capillaires">Entretien capillaires</option>
+                        <option value="Parfums">Parfums</option>
+                    </select>
+                    <output id="typeout"></output>
+                </div>
+                <div class="box">
+                    <fieldset>
+                        <legend>Promotion :</legend>
+                        <input type="radio" name="promotion" id="oui" value="Oui" /><span class="radio" id="oui-label">Oui</span>
+                        <input type="radio" name="promotion" id="non" value="Non" /><span class="radio" id="non-label">Non</span>
+                    </fieldset>
+                    <output id="promotion"></output>
+                </div>
+            </form>
+            <button class="ajoute-button" id="ajoute-button">Ajouter</button>
+            <button class="ajoute-button" id="modifier-button">Modifier</button>
+        </section>
+        <section>
+            <table id="table">
+                <thead>
+                    <tr>
+                        <th>Nom</th>
+                        <th>Marque</th>
+                        <th>Prix</th>
+                        <th>Date de<br>production</th>
+                        <th>Type</th>
+                        <th>Promotion</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+        </section>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Nunito', sans-serif;
+    min-height: 100vh;
+}
+header {
+    padding: 2%;
+    display: flex;
+    justify-content: space-between;
+    background-color: #FEE3C3;
+}
+header button {
+    padding: 0.5% 1% 0.5% 1%;
+    border-radius: 5px;
+    background-color: #FEE3C3;
+    cursor: pointer;
+    transition-duration: 0.6s;
+}
+header button:hover {
+    background-color: #FFD8D9;
+}
+main {
+    background-color: #FFD8D9;
+    min-height: calc(100vh - 40.6px);
+}
+section {
+    padding: 2% 4% 2% 4%;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1% 0 1% 0;
+}
+fieldset {
+    border-color: #FEE3C3;
+}
+fieldset input {
+    margin: 1% 0 1% 6%;
+}
+.ajoute-button , #edite {
+    padding: 0.5% 1% 0.5% 1%;
+    border-radius: 4px;
+    border-color: #FEE3C3;
+    background-color: #2ec309;
+    cursor: pointer;
+    font-weight: bold;
+}
+#modifier-button {
+    background-color: red;
+    visibility: hidden;
+}
+.delete {
+    background-color: red;
+    padding: 0.5% 1% 0.5% 1%;
+    border-radius: 4px;
+    border-color: #FEE3C3;
+    cursor: pointer;
+    font-weight: bold;
+}
+input[type=text] , input[type=date] , select{
+    margin-top: 0.2%;
+    padding: 0 0.5% 0 0.5%;
+    font-style: italic;
+    height: 4vh;
+}
+output {
+    color: red;
+    font-size: smaller;
+}
+table {
+    width: 90%;
+}
+th, td {
+    background-color: #FEE3C3;
+    padding: 1%;
+    border-left: 1px solid;
+    border-right: 1px solid;
+    text-align: center;
+}
+td div {
+    display: flex;
+    justify-content: space-around;
+}
+h1 {
+    font-size: larger;
+}
